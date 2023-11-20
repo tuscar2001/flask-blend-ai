@@ -11,8 +11,8 @@ from packaging import version
 
 required_version = version.parse("1.1.1")
 current_version = version.parse(openai.__version__)
-# OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
+# OPENAI_API_KEY = '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'
 if current_version < required_version:
   raise ValueError(
       f"Error: OpenAI version {openai.__version__} is less than the required version 1.1.1"

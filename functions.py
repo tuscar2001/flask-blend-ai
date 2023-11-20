@@ -8,13 +8,18 @@ OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
 GOOGLE_CLOUD_API_KEY = os.environ['GOOGLE_CLOUD_API_KEY']
 AIRTABLE_API_KEY = os.environ['AIRTABLE_API_KEY']
 
+# OPENAI_API_KEY = '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'
+# GOOGLE_CLOUD_API_KEY = "AIzaSyAaFXb-OP6Wv7RtMXeqKyQw9c0eZ_5LafU"
+# AIRTABLE_API_KEY = "patD8B1AdnqxbLbXu.7d8d0b0aaab365b8b6c0f5b4bf79245294d7409105cd5098fb1c648b39e49646"
+
+
 # Init OpenAI Client
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 
 # Add lead to Airtable
 def create_lead(name, phone, address):
-  url = "https://api.airtable.com/v0/appM1yx0NobvowCAg/Leads"  # Change this to your Airtable API URL
+  url = "https://api.airtable.com/v0/appXt9jsfeeVmtUwu/Leads"  # Change this to your Airtable API URL
   headers = {
       "Authorization": AIRTABLE_API_KEY,
       "Content-Type": "application/json"
