@@ -5,9 +5,14 @@ from flask import Flask, request, jsonify
 import openai
 from openai import OpenAI
 import functions
-
+from dotenv import find_dotenv, load_dotenv
 # Check OpenAI version compatibility
 from packaging import version
+
+
+# Load environment variables from .env file
+load_dotenv(find_dotenv())
+
 
 required_version = version.parse("1.1.1")
 current_version = version.parse(openai.__version__)
