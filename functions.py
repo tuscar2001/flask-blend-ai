@@ -9,7 +9,7 @@ GOOGLE_CLOUD_API_KEY = os.environ['GOOGLE_CLOUD_API_KEY']
 AIRTABLE_API_KEY = os.environ['AIRTABLE_API_KEY']
 
 
-
+test = "Oscar"
 
 # Init OpenAI Client
 client = OpenAI(api_key=OPENAI_API_KEY)
@@ -126,6 +126,12 @@ def simplify_financial_data(data):
   except Exception as e:
     print("Error simplifying data:", e)
     return None
+
+
+# create a calculator that gives the total order amount to a client
+
+
+
 
 
 # Main calculation function for solar data output
