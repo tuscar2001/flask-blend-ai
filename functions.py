@@ -5,11 +5,11 @@ from openai import OpenAI
 from prompts import formatter_prompt, assistant_instructions
 
 OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
-GOOGLE_CLOUD_API_KEY = os.environ['GOOGLE_CLOUD_API_KEY']
+# GOOGLE_CLOUD_API_KEY = os.environ['GOOGLE_CLOUD_API_KEY']
 AIRTABLE_API_KEY = os.environ['AIRTABLE_API_KEY']
 
 
-test = "Oscar"
+
 
 # Init OpenAI Client
 client = OpenAI(api_key=OPENAI_API_KEY)
